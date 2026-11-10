@@ -6,7 +6,8 @@ Asignatura: Desarrollo Frontend II (PFY2202) · Autor: _Bayro Rañileo_
 Aplicación web para gestionar el inventario de un supermercado: permite listar y filtrar artículos, agregarlos
 al inventario, ver su detalle y comprarlos mediante un carrito que descuenta el stock en tiempo real.
 
-🔗 **Sitio publicado (GitHub Pages):** `https://bayrobastian2025.github.io/supermercado-nombre-apellido-PFY2202/`
+   🔗 **Sitio publicado (GitHub Pages):** `https://bayrobastian2025.github.io/supermercado-Bayro-Ra-ileo/`
+
 ## Funcionalidades
 
 | Requerimiento | Dónde está |
