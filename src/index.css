@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Clases reutilizables con @apply: evitan repetir las mismas utilidades en el JSX. */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold
+           transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500
+           disabled:cursor-not-allowed disabled:opacity-50 dark:focus:ring-offset-slate-900;
+  }
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-secondary {
+    @apply border border-slate-300 bg-white text-slate-700 hover:bg-slate-100
+           dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700;
+  }
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-400;
+  }
+
+  .card {
+    @apply rounded-xl border border-slate-200 bg-white p-5 shadow-sm
+           dark:border-slate-700 dark:bg-slate-800;
+  }
+
+  .label {
+    @apply mb-1 block text-sm font-medium text-slate-700 dark:text-slate-200;
+  }
+  .input {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900
+           placeholder-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/40
+           dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100;
+  }
+  .input-error {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500/40;
+  }
+  .error-text {
+    @apply mt-1 text-xs text-red-600 dark:text-red-400;
+  }
+
+  .badge {
+    @apply inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+
+  .tabla-th {
+    @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400;
+  }
+  .tabla-td {
+    @apply px-4 py-3 text-sm;
+  }
+}
