@@ -1,0 +1,1 @@
+import{j as o}from"./index-DlYKYXv-.js";import{E as e}from"./EstadoVacio-AtXgm16h.js";function a(){return o.jsx(e,{titulo:"404 · Página no encontrada",descripcion:"La dirección que ingresaste no existe.",enlace:"/",textoEnlace:"Volver al inventario"})}export{a as default};
